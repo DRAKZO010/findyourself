@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title >find yourself</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Your provided CSS code */
+    </style>
+    <script >
+        function displaypicture() {
+            var name = document.getElementById("name").value;
+            var picturediv = document.getElementById("picture");
+            
+            if (name === "Thanha") {
+                picturediv.innerHTML = "<img src='Thanha.jpg' alt='Thanha'><p>Thanha</p>";
+            } else if (name === "Ameen k") {
+                picturediv.innerHTML = "<img src='Ameen k.jpg' alt='Ameen k'><p>Ameen k</p>";
+            } else if (name === "Vignesh") {
+                picturediv.innerHTML = "<img src='Vignesh.jpg' alt='Vignesh'><p>Vignesh</p>";
+            } else if (name === "Mohammed") {
+                picturediv.innerHTML = "<img src='Mohammed.jpg' alt='Mohammed'><p>Mohammed</p>";
+            } else if (name === "Adnan") {
+                picturediv.innerHTML = "<img src='Adnan.jpg' alt='Adnan'><p>Adnan</p>";
+            } else if (name === "Sufiyan") {
+                picturediv.innerHTML = "<img src='Sufiyan.jpg' alt='Sufiyan'><p>Sufiyan</p>";
+            } else if (name === "Nabeel u") {
+                picturediv.innerHTML = "<img src='Nabeel u.jpg' alt='Nabeel.u'><p>Nabeel.u</p>";
+            } else {
+                picturediv.innerHTML = "No picture available for this name";
+            }
+        }
+    </script>
+</head>
+<body> 
+
+    
+    <div class="ntng container">
+        <h1>Find Yourself</h1>
+        <label for="name">Enter your name </label>
+        <input type="text" id="name">
+        <button onclick="displaypicture()">Find me</button>
+        <div id="picture" class="pic "></div>
+    </div>
+</body>
+</html>  
